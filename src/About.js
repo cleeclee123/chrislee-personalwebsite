@@ -5,7 +5,7 @@ import './About.css';
 export default class Home extends Component {
     render() {
         return (
-            <h1> about </h1>
+            <h1> About </h1>
         )
     }
 }
