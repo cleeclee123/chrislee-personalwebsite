@@ -31,7 +31,7 @@ class HeaderHome extends React.Component {
         return (
             <div>
                 <header ref = {divElement => (this.divElement = divElement)}> 
-                    <h1 className = 'name-intro'> hello, i am chris </h1>
+                   <div className = 'typewriter'> <h1 className = 'name-intro'> hello, i am chris </h1> </div>
                 </header>
 
                 <nav className = {
@@ -45,16 +45,37 @@ class HeaderHome extends React.Component {
                     </div>
 
                     <a href = "/"> <b><u>home</u></b> </a>
-                    <a href = "/about"> <b><u>about</u></b> </a>
-                    <a href = "/projects"> <b><u>projects</u></b> </a>
-                    <a href = "/skills"> <b><u>skills</u></b> </a>
-                    <a href = "/more"> <b><u>more</u></b> </a>
-                    <a href = "/resume"> <b><u>resume</u></b> </a>
+                    <a href = "#aboutme"> <b><u>about</u></b> </a>
+                    <a href = "#projects"> <b><u>projects</u></b> </a>
+                    <a href = "#skillz"> <b><u>skills</u></b> </a>
+                    <a href = "#more"> <b><u>more</u></b> </a>
+                    <a href = "#resume"> <b><u>resume</u></b> </a>
 
                 </nav>
 
                 <div className = 'main'>
-                    About Me: 
+
+                    <div className = 'aboutme-section' id = "aboutme">
+                        <h1> About Me: </h1>
+                    </div>
+
+                    <div className = 'projects-section' id = "projects">
+                        <h1> Projects: </h1>
+                    </div>
+
+                    <div className = 'skills-section' id = "skillz">
+                        <h1> Skills: </h1>
+                    </div>
+
+                    <div className = 'more-section' id = "more">
+                        <h1> More: </h1>
+                    </div>
+
+                    <div className = 'resume-section' id = "resume">
+                        <h1> Resume: </h1>
+                    </div> 
+
+                   
                 </div>
            
             </div>

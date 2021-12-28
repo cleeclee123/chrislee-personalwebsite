@@ -32,6 +32,33 @@ header {
     transform: translate(-50%, -50%);
 }
 
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid rgb(0, 0, 0); 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+        typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 17% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 0, 0) }
+  }
+
+
 .main-nav,
 .main {
     position: relative;
@@ -74,4 +101,25 @@ header,
     position: absolute;
     top: 10px;
     right: 1820px;
+}
+
+.aboutme-section {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+.projects-section {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+.skills-section {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+.more-section {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+.resume-section {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
 }
