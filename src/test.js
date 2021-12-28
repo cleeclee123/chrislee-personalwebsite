@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import HeaderMain from './HeaderMain';
 import './About.css';
 
-export default class About extends Component {
+export default class Test extends Component {
     render() {
         return (
             <div className = 'main-about'>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import HeaderMain from './HeaderMain';
 import Home from './Home';
-import About from './About';
 import {
   BrowserRouter as Router,
   Route,
@@ -14,7 +13,11 @@ class App extends Component {
         <div>
           <HeaderMain/>
             <Route exact path = "/" component = {Home} />
-            <Route path = "/about" component = {About} />
+            <Route path = "/about" component = {Home} />
+            <Route path = "/projects" component = {Home} />
+            <Route path = "/skills" component = {Home} />
+            <Route path = "/more" component = {Home} />
+            <Route path = "/resume" component = {Home} />
         </div>
       </Router>
     )

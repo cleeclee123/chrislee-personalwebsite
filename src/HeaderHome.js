@@ -29,35 +29,37 @@ class HeaderHome extends React.Component {
 
     render() {
         return (
-            <div className = 'header-div'>
-                <div className = 'preview-box'>
-                    <header ref = {divElement => (this.divElement = divElement)}> 
-                        <h1> Welcome to my Website </h1>
-                    </header>
-                </div>
+            <div>
+                <header ref = {divElement => (this.divElement = divElement)}> 
+                    <h1 className = 'name-intro'> hello, i am chris </h1>
+                </header>
 
-                <div className = 'nav'>
-                    <nav className = {
-                        this.state.scrolltop > this.state.height 
-                        ? 'main-nav main-nav-scrolled'
-                        : 'main-nav'    
-                    }> 
-                        
-                        <a href = "/"> Home </a>
-                        <a href = "/about"> About </a>
+                <nav className = {
+                    this.state.scrolltop > this.state.height 
+                    ? 'main-nav main-nav-scrolled'
+                    : 'main-nav'    
+                }> 
 
-                    </nav>
-                </div>
+                    <div className = 'logo-home'>
+                        <img className = "logo-home-image" src = "/images/panpanwebarebears.png" alt =""/>  
+                    </div>
+
+                    <a href = "/"> <b><u>home</u></b> </a>
+                    <a href = "/about"> <b><u>about</u></b> </a>
+                    <a href = "/projects"> <b><u>projects</u></b> </a>
+                    <a href = "/skills"> <b><u>skills</u></b> </a>
+                    <a href = "/more"> <b><u>more</u></b> </a>
+                    <a href = "/resume"> <b><u>resume</u></b> </a>
+
+                </nav>
 
                 <div className = 'main'>
-                    <button> 
-                        hello
-                    </button>
+                    About Me: 
                 </div>
-
+           
             </div>
         )
-    }
+    } 
 }
 export default HeaderHome;
 

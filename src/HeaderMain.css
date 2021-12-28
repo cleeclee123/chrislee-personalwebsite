@@ -1,8 +1,5 @@
 .headerLinks {
     display: flex;
-    background-color: var(--color1);
-    overflow: hidden;
-    background-color: #B0A1BA;
     position: fixed; 
     top: 0; 
     width: 100%; 
@@ -12,7 +9,14 @@
     margin: 0;
     position: absolute;
     top: 50%;
+    left: 65%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  
-  }
+    transform: translateY(-50%); 
+}
+
+.logo-home-image {
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    right: -1180px;
+}
