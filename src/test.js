@@ -1,12 +1,33 @@
-import React, { Component } from 'react';
-import './About.css';
+import React from "react";
+import './Test.css';
+import { db } from './Firebase.js';
+  
+const Test = () => {
+  const saveAnswer = (event) => {
+    event.preventDefault();
 
-export default class Test extends Component {
-    render() {
-        return (
-            <div className = 'main-about'>
-                <h1> about </h1>
-            </div>
-        )
-    }
-}
+    const elementsArray = [...event.target.elements];
+
+    const formData = elementsArray.reduce((accumulator, currentValue) => {
+      if (currentValue.id) {
+        accumulator[currentValue.id] = currentValue.value;
+      }
+
+      return accumulator;
+    }, {});
+
+    db.collection("Test").add(formData);
+  };
+
+  return (
+    <div className="container">
+      <h1> What is your name </h1>
+      <form onSubmit = {saveAnswer}>
+        <input type = "text" id ="answer" placeholder="Type here..."></input>
+        <button> Submit to Firebase </button>
+      </form>
+    </div>
+  );
+};
+
+export default Test;

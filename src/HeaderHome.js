@@ -1,4 +1,11 @@
 import React from 'react';
+import About from './About';
+import Project from './Project';
+import Skills from './Skills';
+import More from './More';
+import Resume from './Resume';
+import Test from './Test';
+import TestMore from './TestMore';
 import './HeaderHome.css';
 
 class HeaderHome extends React.Component {
@@ -56,24 +63,32 @@ class HeaderHome extends React.Component {
                 <div className = 'main'>
 
                     <div className = 'aboutme-section' id = "aboutme">
-                        <h1> About Me: </h1>
+                        <About> </About>
                     </div>
 
                     <div className = 'projects-section' id = "projects">
-                        <h1> Projects: </h1>
+                        <Project> </Project>
                     </div>
 
                     <div className = 'skills-section' id = "skillz">
-                        <h1> Skills: </h1>
+                        <Skills> </Skills>
                     </div>
 
                     <div className = 'more-section' id = "more">
-                        <h1> More: </h1>
+                        <More> </More>
                     </div>
 
                     <div className = 'resume-section' id = "resume">
-                        <h1> Resume: </h1>
+                        <Resume> </Resume>
                     </div> 
+
+                    <div className = 'testing' id = "testing"> 
+                        <Test> </Test>
+                    </div>
+
+                    <div className = 'testing-p2' id = "testing-p2">
+                        <TestMore> </TestMore>
+                    </div>
 
                    
                 </div>
